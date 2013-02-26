@@ -1,0 +1,38 @@
+.hand > nav {
+   margin: 109px auto !important;
+    overflow-y: auto;
+    width: 39% !important;
+}
+
+.apps{
+	
+display: none;
+ float: left;
+    height: 47px;
+    overflow: hidden;
+    width: 24px;
+    	text-align: center;
+
+}
+
+.apps span{
+	font-size: 11px;
+
+}
+
+
+.apps img:hover{
+
+	cursor: pointer;
+
+ 
+}
+
+
+
+
+.apps img:active{
+
+	cursor: pointer;
+	opacity: .8;
+}

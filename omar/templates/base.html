@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{% block title %}  Omar Hernandez {% endblock title%}</title>
+
+	<link rel="stylesheet" href="{{ MEDIA_URL }}css/normalize.css"></link>
+	<link rel="stylesheet" href="{{ MEDIA_URL }}css/style.css"></link>
+
+	{% block css %} {% endblock css%}
+	<script src="{{ MEDIA_URL }}js/jquery.js"></script>
+{% block js %} {% endblock js%}
+</head>
+<body>
+
+
+<section id="init_app">
+
+<nav class="content">
+	
+	{% include "menu.html" %}
+	
+{#} CONTENIDO DINAMICO {#}
+	<section class="str-data-assyc">
+	{% block main %}
+
+
+		
+
+
+
+
+
+
+
+
+
+	{% endblock main %}
+
+		</section>
+	
+{#} END CONTENIDO DINAMICO {#}
+
+
+	<section class="hand">
+		<nav>
+			
+	{% include 'apps.html' %}
+
+		</nav>
+	</section>
+
+
+
+
+
+</nav>
+
+
+{% include "footer.html" %}
+
+</section>
+</body>
+</html>

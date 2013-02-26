@@ -1,0 +1,56 @@
+
+
+/*
+
+TTF - Works in most browsers except IE and iPhone.
+EOT - IE only.
+WOFF - Compressed, emerging standard.
+SVG - iPhone/iPad.
+
+
+*/
+
+
+
+/* light */
+
+@font-face {
+    font-family: "osanslight";
+    font-style: normal;
+    font-weight: normal;
+    src: 
+    url("font/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"), 
+    url("font/OpenSans-Light-webfont.woff") format("woff"),
+    url("font/OpenSans-Light-webfont.svg") format("svg"),
+    url("font/OpenSans-Light-webfont.ttf") format("truetype");
+}
+
+/* semibold */
+
+@font-face {
+    font-family: "osanssemibold";
+    font-style: normal;
+    font-weight: normal;
+    src: 
+    url("font/OpenSans-Semibold-webfont.eot?#iefix") format("embedded-opentype"), 
+    url("font/OpenSans-Semibold-webfont.woff") format("woff"),
+    url("font/OpenSans-Semibold-webfont.svg") format("svg"),
+    url("font/OpenSans-Semibold-webfont.ttf") format("truetype");
+}
+
+ /* SemiboldItalic */
+
+@font-face {
+    font-family: "SemiboldItalic";
+    font-style: normal;
+    font-weight: normal;
+    src: 
+    url("font/OpenSans-SemiboldItalic-webfont.eot?#iefix") format("embedded-opentype"), 
+    url("font/OpenSans-SemiboldItalic-webfont.woff") format("woff"),
+    url("font/OpenSans-SemiboldItalic-webfont.svg") format("svg"),
+    url("font/OpenSans-SemiboldItalic-webfont.ttf") format("truetype");
+}
+
+
+
+/* ---------------------------------------------------------------- */

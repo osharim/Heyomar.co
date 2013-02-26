@@ -1,0 +1,95 @@
+
+@import url(font.css);
+
+
+@import url(menu.css);
+
+
+@import url(apps.css);
+
+body{
+
+	font-size: 12px;
+	overflow: hidden;
+}
+
+
+
+#init_app{
+
+    background-attachment: fixed;
+    background-color: transparent;
+    background-image: url("/media/img/bg.png");
+    background-position: 0 0;
+    background-repeat: repeat;
+    background-size: 100% auto;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+
+}
+
+/* ------------------------ FOOTER --------------------------------- */
+footer{
+
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7);
+    bottom: 0;
+    height: 50px;
+    position: absolute;
+    width: 100%;
+}
+
+footer .container,section#init_app nav{
+  	height: auto;
+    margin: 0 auto;
+
+    width: 910px;
+
+}
+
+ ul.option {
+ float: left;
+    margin: 0;
+    text-align: center;
+
+}
+
+ li {
+		color: rgba(255,255,255,.8);
+		float: left;
+		font-size: 13px;
+		padding: 15px 20px;
+		text-shadow:1px 1px rgba(0,0,0,.5);
+		font-family: 'osanslight';
+}
+
+
+.option li:hover {
+	box-shadow: 1px -2px rgba(0,0,0,.2);
+		color: rgba(255,255,255,1);
+		cursor: pointer;
+		text-decoration: underline;
+				text-shadow:1px 2px 4px rgba(0,0,0,.9);
+	}
+
+footer img{
+  	padding-top: 5px;
+	float: left;
+
+}
+
+/* ------------------------END  FOOTER --------------------------------- */
+
+
+.str-data-assyc {
+    float: left;
+    margin-top: 95px;
+    position: absolute;
+    width: 37%;
+}
+ 
+

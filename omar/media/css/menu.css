@@ -1,0 +1,31 @@
+
+/* ------------------------ MENU  --------------------------------- */
+
+
+
+.menu_active{
+     font-family: 'osanssemibold';
+    text-decoration: underline;
+}
+
+
+section#init_app nav .menu{
+
+	margin-top: 70px;
+
+}
+
+
+section.hand {
+ background: url("/media/img/hand.png") no-repeat scroll 0 0 transparent;
+    bottom: 0;
+    height: 568px;
+    margin-right: -310px;
+    position: absolute;
+    right: 29%;
+    opacity: 0;
+    width: 600px;
+}
+/* ------------------------ END MENU  --------------------------------- */
+/* HAND */
+

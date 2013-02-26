@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %} About Omar Hernandez {% endblock title%}
+
+{% block css %}
+
+	<link rel="stylesheet" href="{{ MEDIA_URL }}css/aboutme.css">
+
+
+{% endblock css %}
+
+
+
+
+
+{% block js %} 
+	<script src="{{ MEDIA_URL }}js/init.js"></script>
+{% endblock js %}
+
+
+
+
+
+	{% block main %}
+
+
+<section class="about_me">
+	
+	<ul>
+		<li class="hello">Hello.</li>
+		<li  class="name">I'm Omar Hernandez.</li>
+	 
+		<li class="desc"> <span class="desc">Im 22 years old. <br> </span>Im insteresed creating <br> solutions  using Web and Mobile technologies.</li>
+		<li class="msg">A man who loves write code and wanna be UX/UI</li>
+ 
+		<li class="think">Love create solutions with code. </li>
+	</ul>
+ </section>
+
+
+	{% endblock main %}
