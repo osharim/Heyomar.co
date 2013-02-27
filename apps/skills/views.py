@@ -3,16 +3,16 @@ from django.shortcuts import render_to_response
 from django.template import RequestContext
 from django.http import HttpResponse
  
-def aboutme_view(request):
+def skills_view(request):
  
  
 	ctx = {
 
-			'aboutme_is_active' : True ,
+			'skills_is_active' : True ,
 
 		  }
  
 
-	return render_to_response('inicio/inicio.html',ctx,  context_instance = RequestContext(request)  )
+	return render_to_response('inicio/skills.html',ctx,  context_instance = RequestContext(request)  )
 
 

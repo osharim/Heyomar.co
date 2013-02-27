@@ -5,6 +5,6 @@ from django.conf.urls.defaults import patterns,url
 
 urlpatterns = patterns('apps.inicio.views',  #Init View
 
-			url(r'^$' ,    'inicio_view' ,  name = 'vista_inicio') ,  
+			url(r'^$' ,    'aboutme_view' ,  name = 'vista_aboutme') ,  
 
 			)

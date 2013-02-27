@@ -22,6 +22,8 @@ body{
     background-image: url("/media/img/bg.png");
     background-position: 0 0;
     background-repeat: repeat;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
     background-size: 100% auto;
     bottom: 0;
     height: 100%;
@@ -30,20 +32,24 @@ body{
     right: 0;
     top: 0;
     width: 100%;
+    
 
 }
 
 /* ------------------------ FOOTER --------------------------------- */
 footer{
 
-    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7);
+ background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     bottom: 0;
+    box-shadow: 1px -1px #111111;
     height: 50px;
     position: absolute;
     width: 100%;
+
 }
 
-footer .container,section#init_app nav{
+footer .container {
   	height: auto;
     margin: 0 auto;
 
@@ -70,10 +76,10 @@ footer .container,section#init_app nav{
 
 .option li:hover {
 	box-shadow: 1px -2px rgba(0,0,0,.2);
-		color: rgba(255,255,255,1);
-		cursor: pointer;
-		text-decoration: underline;
-				text-shadow:1px 2px 4px rgba(0,0,0,.9);
+	color: rgba(255,255,255,1);
+	cursor: pointer;
+	text-decoration: underline;
+	text-shadow:1px 2px 4px rgba(0,0,0,.9);
 	}
 
 footer img{
@@ -87,9 +93,462 @@ footer img{
 
 .str-data-assyc {
     float: left;
-    margin-top: 95px;
+     margin-top: 5%;
     position: absolute;
     width: 37%;
 }
  
 
+
+.content {
+    height: auto;
+    margin: -16px auto;
+    overflow-y: auto;
+    width: 980px;
+}
+
+
+/*--------------------------------------- */
+/* RESPONSIVE DESIGN */
+
+
+/* SUPER PANTALLAS  */
+/* ********************************************************** */
+/* ********************************************************** */
+/* ********************************************************** */
+/* ********************************************************** */
+@media screen and (min-width: 1400px) and (max-width: 5500px) {
+ 
+ 
+li{
+
+    font-size: 15px;
+ 
+}
+
+.apps{
+
+    opacity: 1 !important;
+    display: block;
+
+}
+
+ .apps{
+    height: 94px;
+    width: 62px;
+ }
+
+
+
+.hand > nav {
+    margin: -194px auto;
+}
+
+section.hand{
+
+
+    background: transparent;
+
+}
+
+
+.apps span {
+    font-size: 20px;
+}
+
+
+
+}
+
+/* ********************************************************** */
+/* ********************************************************** */
+/* ********************************************************** */
+/* ********************************************************** */
+
+/* IPAD */
+@media screen and (min-width: 700px) and (max-width: 959px) {
+ 
+
+
+
+ li{
+    font-size: 14px;
+ }
+
+  .name{
+
+font-size: 30px;
+
+}
+
+
+.desc{
+
+ 
+font-size: 14px;
+
+
+    }
+
+
+    #init_app{
+         background-size: 145% auto;
+    }
+
+    section.hand {
+ right: 21%;
+    }
+
+.skill{
+    font-size: 12px;
+}
+
+}
+
+
+/* ********************************************************** */
+/* ********************************************************** */
+/* ********************************************************** */
+/* ********************************************************** */
+
+/* 541-767 pixels: A layout just for Kindle Fire in portrait orientation! */
+@media screen and (min-width: 541px) and (max-width: 699px) {
+ 
+
+
+
+  
+
+
+    #init_app{
+         background-size: 192% auto;
+    }
+
+    section.hand {
+     right: 20%;
+     }
+  
+
+  li{
+ 
+  }
+
+
+  section.hand{
+
+
+    background: transparent;
+
+}
+
+.apps,.hand{
+
+    display: block;
+    opacity: 1 !important;
+}
+
+.hand{
+
+     margin-right: -250px !important;
+}
+
+
+
+ .apps{
+ 
+  
+    width: 62px;
+    margin-top: 5px
+ }
+
+
+.apps span {
+    font-size: 20px;
+}
+
+}
+/* ********************************************************** */
+/* ********************************************************** */
+/* ********************************************************** */
+/* ********************************************************** */
+
+/* 
+400-540 pixels: iPhones in landscape and most Android phones 
+in portrait would see this layout.*/
+
+
+@media screen and (min-width: 0px) and (max-width: 540px) {
+ 
+
+    body{
+        overflow: auto;
+    }
+
+    .name{
+        font-family: 'osanssemibold';
+    }
+
+    #init_app{
+         background-size: 250% auto;
+    }
+
+
+  section.hand{
+
+
+    background: transparent;
+ 
+
+    }
+
+
+.apps,.hand{
+
+    display: block;
+    opacity: 1 !important;
+}
+
+.hand{
+
+     margin-right: -250px !important;
+}
+
+ 
+ 
+  li{
+ 
+ 
+    font-size: 15px;
+
+  }
+
+
+  .apps{
+ 
+  
+    width: 13%;
+    margin-top: 5px
+ }
+
+
+.apps span {
+    font-size: 20px;
+}
+
+
+
+.hand > nav {
+ background: none repeat scroll 0 0 rgba(0, 0, 0, 0.4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    left: 6px;
+    margin: -121px 71px 4px auto;
+    padding-bottom: 15px;
+    position: absolute;
+    width: 531px !important;
+}
+ 
+
+
+.str-data-assyc {
+  margin-top: 13%;
+    text-align: center;
+    width: 84%;
+}
+
+
+section.hand {
+    position: absolute;
+    right: 29%;
+    width: 600px;
+    bottom: auto;
+    height: auto;
+    bottom:none !important;
+}
+
+
+#init_app{
+    height: 125%;
+}
+
+
+
+section#init_app nav .menu {
+    margin-top: 143px;
+}
+
+
+}
+
+
+/* ********************************************************** */
+/* ********************************************************** */
+/* ********************************************************** */
+/* ********************************************************** */
+
+/* 
+0-539 pixels: iPhones in landscape and most Android phones 
+in portrait would see this layout.*/
+
+
+@media screen and (min-width: 0px) and (max-width: 450px) {
+
+
+    #init_app{
+         background-size: 550% auto;
+           height: 146%;
+    }
+
+
+.apps span {
+    font-size: 17px;
+}
+
+
+.apps {
+    margin-left: 3%;
+    margin-top: 5px;
+    width: 9%;
+}
+
+}
+
+
+
+@media screen and (min-width: 0px) and (max-width: 349px) {
+
+ .apps > span {
+    display: none;
+}
+
+
+.hand > nav {
+ left: -105px;
+    padding-right: 37px;
+}
+
+
+
+.apps {
+      float: right;
+    margin-left: 1px;
+    margin-top: 4px;
+    padding: 8px 0 0;
+    width: 14%
+}
+
+
+.menu .option{
+  margin: -46px auto;
+    padding: 9px;
+
+}
+
+.str-data-assyc ul {
+    width: 100% !important;
+}
+
+.str-data-assyc {
+    margin-left: -37px;
+    margin-top: 7%;
+    text-align: center;
+    width: 82%;
+}
+
+.skill {
+    text-align: left;
+    text-align: start;
+    font-size: 13px;
+}
+
+
+section#init_app nav .menu {
+ margin-top: 143px;
+    width: 100%;
+}
+
+
+.content {
+    height: auto;
+    margin: -16px auto;
+    overflow: hidden;
+    width: 100%;
+}
+
+ }
+
+
+
+/* ********************************************************** */
+/* ********************************************************** */
+/* ********************************************************** */
+/* ********************************************************** */
+
+/* 
+0-539 pixels: iPhones in landscape and most Android phones 
+in portrait would see this layout.*/
+
+
+@media screen and (min-width: 0px) and (max-width: 290px) {
+
+
+.str-data-assyc ul {
+    width: 258px;
+}
+
+.apps {
+      float: right;
+    margin-left: 1px;
+    margin-top: 4px;
+    padding: 8px 0 0;
+    width: 12%
+}
+
+li {
+   
+    font-size: 14px;
+    width: 65%;
+}
+
+.menu .option {
+ height: 167px;
+    margin: -46px auto;
+    padding: 9px;
+    width: 100%;
+}
+
+
+.menu .option  li {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.2) !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+    box-shadow: 1px 1px rgba(150, 150, 150, 0.1);
+    display: inline-block;
+    float: left;
+    font-size: 14px;
+    overflow: hidden;
+    padding: 10px 0 12px;
+    width: 100%;
+}
+
+
+.str-data-assyc {   margin-top: 35%;}
+
+.container .option li{
+
+    font-size: 9px;
+
+}
+
+
+.str-data-assyc > section {
+    width: 100%;
+}
+
+#init_app {
+    height: 136%;
+}
+
+.name {
+    font-size: 27px;
+}
+
+}

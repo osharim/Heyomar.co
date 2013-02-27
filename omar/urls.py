@@ -11,7 +11,8 @@ urlpatterns = patterns('',
 
     
 
-	url(r'^' , include('apps.inicio.urls')) , 
+	url(r'^' , include('apps.inicio.urls')) , #about me 
+    url(r'^' , include('apps.skills.urls')) , 
 
  
     # Examples:
