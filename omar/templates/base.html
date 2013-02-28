@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html class="no-js" lang="en" >
 <head>
 	<meta charset="UTF-8">
 	 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
@@ -12,18 +12,14 @@
 
 	<title>{% block title %}  Omar Hernandez {% endblock title%}</title>
 
-	<link rel="stylesheet" href="{{ MEDIA_URL }}css/normalize.css"></link>
-	<link rel="stylesheet" href="{{ MEDIA_URL }}css/style.css"></link>
+	<link rel="stylesheet" href="{{ MEDIA_URL }}css/normalize.css"> 
+	<link rel="stylesheet" href="{{ MEDIA_URL }}css/style.css"> 
 
 
  
 
 	{% block css %} {% endblock css%}
-	<script src="{{ MEDIA_URL }}js/jquery.js"></script>
- 
 
-
-{% block js %} {% endblock js%}
 </head>
 <body>
 
@@ -74,5 +70,32 @@
 {% include "footer.html" %}
 
 </section>
+
+
+
+
+ <script src="{{ MEDIA_URL }}js/jquery.js"></script>
+ <script src="{{ MEDIA_URL }}js/modernizr.js"></script>
+ <script src="{{ MEDIA_URL }}js/queryloader.js"></script>
+
+
+{% block js %} {% endblock js%}
+
+	<script>
+
+
+$("body").queryLoader2(
+	{
+		barColor:"#fff",
+ 		backgroundColor:"#000",
+ 		percentage:true,
+ 		barHeight:1,
+ 		deepSearch:true,
+ 		completeAnimation:"fade",
+ 		onComplete:function(){ }
+ 	});
+
+	</script>
+
 </body>
 </html>

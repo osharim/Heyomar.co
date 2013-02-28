@@ -8,7 +8,7 @@
 @import url(apps.css);
 
 body{
-
+    background: #222;
 	font-size: 12px;
 	overflow: hidden;
 }
@@ -95,7 +95,7 @@ footer img{
   margin-top: 14%;
     width: 37%;
 
-    
+
 }
  
 
