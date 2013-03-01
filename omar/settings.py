@@ -4,6 +4,10 @@ import os
 # Django settings for tributario project.
 
 DEBUG = True
+
+DEPLOY = False
+PRODUCTION = True
+
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
@@ -14,16 +18,35 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': '',                      # Or path to database file if using sqlite3.
-        'USER': '',                      # Not used with sqlite3.
-        'PASSWORD': '',                  # Not used with sqlite3.
+if DEPLOY:
+
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+             'NAME': 'omar',                      # Or path to database file if using sqlite3.
+            'USER': 'root',                      # Not used with sqlite3.
+            'PASSWORD': 'nf9ckpg',                  # Not used with sqlite3.
+            'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
+            'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
+            }
+        }
+
+else:
+
+    if PRODUCTION:
+
+        DATABASES = {
+        'default': {
+        'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+        'NAME': 'bindsmec_omar',                      # Or path to database file if using sqlite3.
+        'USER': 'bindsmec_omr',                      # Not used with sqlite3.
+        'PASSWORD': 'nf9ckpgA?',                  # Not used with sqlite3.
         'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
         'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
     }
 }
+
+
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -118,6 +141,8 @@ TEMPLATE_DIRS = (
 
 INSTALLED_APPS = (
  
+    
+
     'django.contrib.staticfiles',
  
     'apps.inicio',
