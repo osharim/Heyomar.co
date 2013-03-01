@@ -6,8 +6,6 @@ from handlers.models import viewer
 from helpers.core import get_client_ip
 
 
-
-
 def skills_view(request):
  
   	viewer.objects.create( zone = 2 ,ip = get_client_ip(request ) ) 
