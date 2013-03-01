@@ -6,7 +6,7 @@ import os
 DEBUG = True
 
 DEPLOY = False
-PRODUCTION = True
+ 
 
 TEMPLATE_DEBUG = DEBUG
 
@@ -33,9 +33,7 @@ if DEPLOY:
 
 else:
 
-    if PRODUCTION:
-
-        DATABASES = {
+    DATABASES = {
         'default': {
         'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
         'NAME': 'bindsmec_omar',                      # Or path to database file if using sqlite3.

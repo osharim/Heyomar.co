@@ -1,4 +1,5 @@
 import datetime
+from django.utils import timezone
 from django.db import models
 # sudo apt-get install python-mysqldb install on linux
  
@@ -15,7 +16,7 @@ class viewer(models.Model):
 
     def save(self,*args,**kwargs):
 
-        self.date = datetime.datetime.now()
+        self.date = timezone.make_aware(datetime.datetime.now(),timezone.get_default_timezone())
 
         super(viewer,self).save(*args,**kwargs)
 
