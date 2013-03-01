@@ -20,6 +20,32 @@
 
 	{% block css %} {% endblock css%}
 
+	
+
+
+ <script src="{{ MEDIA_URL }}js/jquery.js"></script>
+ <script src="{{ MEDIA_URL }}js/modernizr.js"></script>
+ <script src="{{ MEDIA_URL }}js/queryloader.js"></script>
+
+
+{% block js %} {% endblock js%}
+
+	<script>
+
+
+$("body").queryLoader2(
+	{
+		barColor:"#fff",
+ 		backgroundColor:"#000",
+ 		percentage:true,
+ 		barHeight:1,
+ 		deepSearch:true,
+ 		completeAnimation:"fade",
+ 		onComplete:function(){ }
+ 	});
+
+	</script>
+
 </head>
 <body>
 
@@ -72,30 +98,6 @@
 </section>
 
 
-
-
- <script src="{{ MEDIA_URL }}js/jquery.js"></script>
- <script src="{{ MEDIA_URL }}js/modernizr.js"></script>
- <script src="{{ MEDIA_URL }}js/queryloader.js"></script>
-
-
-{% block js %} {% endblock js%}
-
-	<script>
-
-
-$("body").queryLoader2(
-	{
-		barColor:"#fff",
- 		backgroundColor:"#000",
- 		percentage:true,
- 		barHeight:1,
- 		deepSearch:true,
- 		completeAnimation:"fade",
- 		onComplete:function(){ }
- 	});
-
-	</script>
 
 </body>
 </html>
