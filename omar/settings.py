@@ -1,12 +1,24 @@
 #encoding:utf-8
 import os
+from os.path import abspath, dirname, join
 
-# Django settings for tributario project.
+DJANGO_ROOT = abspath(join(dirname(__file__), "../"))
+
+PROJECT_ROOT = abspath(dirname(__file__))
+
+APPPATH = '%s' % PROJECT_ROOT
+
+GEOIP_PATH = PROJECT_ROOT + '/geoip/'
+
+GEOIP_CITY = 'GeoCity.dat'
+
+print GEOIP_PATH
 
 DEBUG = True
 
 DEPLOY = False
  
+
 
 TEMPLATE_DEBUG = DEBUG
 
@@ -67,7 +79,7 @@ USE_I18N = True
 USE_L10N = True
 
 # If you set this to False, Django will not use timezone-aware datetimes.
-USE_TZ = True
+USE_TZ = False
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/home/media/media.lawrence.com/media/"
