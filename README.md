@@ -1,4 +1,6 @@
-Type-and-share-code
+Heyomar.co
 ===================
 
-write and share url of your code in Django 
+Todo el codigo de mi pagina personal.
+
+ 
