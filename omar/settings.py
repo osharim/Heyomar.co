@@ -11,8 +11,7 @@ APPPATH = '%s' % PROJECT_ROOT
 GEOIP_PATH = PROJECT_ROOT + '/geoip/'
 
 GEOIP_CITY = 'GeoCity.dat'
-
-print GEOIP_PATH
+ 
 
 DEBUG = True
 
@@ -48,9 +47,9 @@ else:
     DATABASES = {
         'default': {
         'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'bindsmec_omar',                      # Or path to database file if using sqlite3.
-        'USER': 'bindsmec',                      # Not used with sqlite3.
-        'PASSWORD': 'nf9ckpgA?',                  # Not used with sqlite3.
+        'NAME': '',                      # Or path to database file if using sqlite3.
+        'USER': '',                      # Not used with sqlite3.
+        'PASSWORD': '',                  # Not used with sqlite3.
         'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
         'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
     }
