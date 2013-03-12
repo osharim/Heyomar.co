@@ -1,25 +1,16 @@
 #encoding:utf-8
 from django.conf.urls.defaults import patterns,url
 
-<<<<<<< HEAD
-#creamos nueva rama de urls
-
-urlpatterns = patterns('apps.inicio.views',  #Init View
-
-			url(r'^$' ,    'aboutme_view' ,  name = 'vista_aboutme') ,  
-
-			)
-=======
  #creamos nueva rama de urls
 
-urlpatterns = patterns('apps.inicio.views', #prefijos de la vista que queremos jalar archivo donde estamos jalando las vistas
+urlpatterns = patterns('apps.free.views', #prefijos de la vista que queremos jalar archivo donde estamos jalando las vistas
 
-			url(r'^$' ,    'inicio_view' ,  name = 'vista_inicio') ,  
+ 
 
-			url(r'^(?P<url>.*)/$' ,    'init_free_account_view' , name="init_free_account") , 
+			url(r'^free/create/$' ,    'free_acount_generate_url' ) ,  
 
+			
 
-			url(r'^update/$' ,    'upadte_code' ,  name = 'vista_update') ,  
  
 
 			) #cerramos la creacion de las ramas
@@ -44,4 +35,3 @@ urlpatterns = patterns('apps.inicio.views', #prefijos de la vista que queremos j
 
 #Para diseñar las URLs de la aplicación, se crea un módulo Python llamado URLconf: es como una tabla de contenidos para la aplicación que 
 #contiene un mapeo simple entre patrones de URLs y funciones Python. Las URLconfs también sirven para desacoplar las URLs del código Python.
->>>>>>> 96e61d3632b168c9e3ce901fa7154a12e754c9a7

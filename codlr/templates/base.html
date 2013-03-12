@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html lang="en-US"  class="no-js"> 
+<head>
+			<meta charset="UTF-8">
+			<meta http-equiv="Expires" content="0">
+			
+			<meta http-equiv="Last-Modified" content="0">
+			
+			<meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+			
+			<meta http-equiv="Pragma" content="no-cache"> 
+
+
+	 <!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        
+        <style type="text/css">
+        .clear {
+          zoom: 1;
+          display: block;
+        }
+        </style>
+
+ <![endif]-->
+<!--[if lt IE 7]>  <html class="no-js ie6 oldie" lang="es"> <script>window.ie = 6;</script> <![endif]-->
+<!--[if IE 7]>     <html class="no-js ie7 oldie" lang="es"> <script>window.ie = 7;</script> <![endif]-->
+<!--[if IE 8]>     <html class="no-js ie8 oldie" lang="es"> <script>window.ie = 8;</script> <![endif]-->
+<!--[if gt IE 8]>  <html class="no-js ie9" lang="es"> <script>window.ie = 9;</script> <![endif]-->
+<!--[if lt IE 9]>
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+<![endif]-->		
+
+	<title>{% block title %} Titulo Base{% endblock %} </title>
+
+	{% block style_css%}<link rel="stylesheet" href="{{ MEDIA_URL }}css/normalize.css">{% endblock style_css%}
+	{% block reset_css%}<link rel="stylesheet" href="{{ MEDIA_URL }}css/style.css">{% endblock reset_css%}
+	<link rel="stylesheet" href="{{ MEDIA_URL }}css/binds.css"> 
+	<script type="text/javascript" src="{{ MEDIA_URL }}js/jquery-1.6.js"></script>
+ 
+	<script type="text/javascript" src="{{ MEDIA_URL }}js/events.js"></script>
+ 
+	<script type="text/javascript" src="{{ MEDIA_URL }}js/modernizr.js"></script>
+<script type="text/javascript" src="{{ MEDIA_URL }}js/module.js"></script>
+<script type="text/javascript" src="{{ MEDIA_URL }}js/update_code.js"></script>
+	{% block style_path%} {% endblock style_path%}
+ 
+
+	{% if requiere_select_project %}
+
+
+	<script type="text/javascript">
+
+	jQuery(document).ready(function($) {
+		
+//************************************************************
+
+
+                                    $.get("/init/",function(data){
+
+
+                  binds.box({
+                                    title : "Please select you status project",
+                                    height:"235" , 
+                                    top : "29% ",
+                                    left : "29%" ,
+                                    width : "630" ,
+                                    content : data,
+                            
+
+                                     onClose : function(){
+
+
+
+
+                                     }
+                  }) ;  
+
+ 
+                                    				})
+//************************************************************
+		
+	});
+	
+
+
+
+	</script>
+
+	{% endif%}
+
+
+
+
+
+</head>
+<body>
+	
+ 
+
+ 
+ 
+<!--  ------------------- HEADER  ------------------------- -->
+
+{% include "header.html" %}
+
+
+<!--  ---------------------------------------------------------- -->
+
+ 
+<!-- 
+{% include "menu.html" %}
+  NAVIGATOR -->
+ 
+<section id="container_">
+	
+
+
+ 
+ 
+			{% block content %}
+
+			{% endblock content %}
+
+
+</section>
+
+
+
+
+{% include "footer.html" %}
+
+
+
+
+</body>
+</html>

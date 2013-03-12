@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %} Share code W/F{% endblock %}
+{% block style_path%} <link rel="stylesheet" href="{{ MEDIA_URL }}css/inicio/base.css">{% endblock style_path%}
+ 
+{% block content %}
+
+{{ pass}}
+
+{% comment %}  INCLUIMOS EL EDITOR DE CODIGO  {% endcomment %}
+
+{% include 'editor.html' %}
+
+{% comment %}  INCLUIMOS EL CONTENEDOR DE LOS USUARIOS DEL CHAT{% endcomment %}
+
+{% include 'chat_users.html' %}
+
+{% comment %}  INCLUIMOS EL CONTENEDOR LAS CONVERSACIONES {% endcomment %}
+
+{% include 'chat_timeline.html' %}
+
+{% endblock %}
