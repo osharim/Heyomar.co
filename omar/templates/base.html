@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <html class="no-js" lang="en" >
 <head>
@@ -76,4 +77,108 @@
 
 
 </body>
+=======
+<!doctype html>
+<html class="no-js" lang="en" >
+<head>
+	<meta charset="UTF-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+<!-- Estupido Explorer -->
+ <!–[if lt IE 9]>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]–> 
+
+
+	<title>{% block title %}  Omar Hernandez {% endblock title%}</title>
+
+	<link rel="stylesheet" href="{{ MEDIA_URL }}css/normalize.css"> 
+	<link rel="stylesheet" href="{{ MEDIA_URL }}css/style.css"> 
+
+
+ 
+
+	{% block css %} {% endblock css%}
+
+	
+
+
+ <script src="{{ MEDIA_URL }}js/jquery.js"></script>
+ <script src="{{ MEDIA_URL }}js/modernizr.js"></script>
+ <script src="{{ MEDIA_URL }}js/queryloader.js"></script>
+
+
+{% block js %} {% endblock js%}
+
+	<script>
+
+
+$("body").queryLoader2(
+	{
+		barColor:"#fff",
+ 		backgroundColor:"#000",
+ 		percentage:true,
+ 		barHeight:1,
+ 		deepSearch:true,
+ 		completeAnimation:"fade",
+ 		onComplete:function(){ }
+ 	});
+
+	</script>
+
+</head>
+<body>
+
+
+<section id="init_app"  >
+
+<nav class="content">
+	
+	{% include "menu.html" %}
+	
+{#} CONTENIDO DINAMICO {#}
+	<section class="str-data-assyc  ">
+	{% block main %}
+
+
+		
+
+
+
+
+
+
+
+
+
+	{% endblock main %}
+
+		</section>
+	
+{#} END CONTENIDO DINAMICO {#}
+
+
+	<section class="hand">
+		<nav>
+			
+	{% include 'apps.html' %}
+
+		</nav>
+	</section>
+
+
+
+
+
+</nav>
+
+
+{% include "footer.html" %}
+
+</section>
+
+
+
+</body>
+>>>>>>> 681e71f2b08535eb092125611d4fd9451fd83640
 </html>

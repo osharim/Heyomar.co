@@ -17,4 +17,4 @@ def aboutme_view(request):
 
 	return render_to_response('inicio/inicio.html',ctx,  context_instance = RequestContext(request)  )
 
-
+ 
