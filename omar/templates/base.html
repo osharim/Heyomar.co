@@ -6,14 +6,14 @@
 
 <!-- Estupido Explorer -->
  <!–[if lt IE 9]>
-<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js?v={{ VERSION }}"></script>
 <![endif]–> 
 
 
 	<title>{% block title %}  Omar Hernandez {% endblock title%}</title>
 
-	<link rel="stylesheet" href="{{ MEDIA_URL }}css/normalize.css"> 
-	<link rel="stylesheet" href="{{ MEDIA_URL }}css/style.css"> 
+	<link rel="stylesheet" href="{{ MEDIA_URL }}css/normalize.css?v={{ VERSION }}"> 
+	<link rel="stylesheet" href="{{ MEDIA_URL }}css/style.css?v={{ VERSION }}"> 
 
 
  
@@ -52,14 +52,6 @@
 {#} END CONTENIDO DINAMICO {#}
 
 
-	<section class="hand">
-		<nav>
-			
-	{% include 'apps.html' %}
-
-		</nav>
-	</section>
-
 
 
 
@@ -76,26 +68,12 @@
 
  <script src="{{ MEDIA_URL }}js/jquery.js"></script>
  <script src="{{ MEDIA_URL }}js/modernizr.js"></script>
- <script src="{{ MEDIA_URL }}js/queryloader.js"></script>
+
 
 
 {% block js %} {% endblock js%}
 
-	<script>
 
-
-$("body").queryLoader2(
-	{
-		barColor:"#fff",
- 		backgroundColor:"#000",
- 		percentage:true,
- 		barHeight:1,
- 		deepSearch:true,
- 		completeAnimation:"fade",
- 		onComplete:function(){ }
- 	});
-
-	</script>
 
 </body>
 </html>

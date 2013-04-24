@@ -65,7 +65,7 @@ footer .container {
 }
 
  li {
-		color: rgba(255,255,255,.8);
+		color: rgba(255,255,255,.7);
 		float: left;
 		font-size: 13px;
 		padding: 15px 20px;
@@ -90,20 +90,16 @@ footer img{
 
 /* ------------------------END  FOOTER --------------------------------- */
 
-
 .str-data-assyc {
-  margin-top: 14%;
-    width: 37%;
-
-
+    margin-top: 10%;
+    width: 100%;
 }
  
 
 
 .content {
-    height: auto;
+  height: auto;
     margin: -16px auto;
-    overflow-y: auto;
     width: 980px;
 }
 
@@ -112,54 +108,7 @@ footer img{
 /* RESPONSIVE DESIGN */
 
 
-/* SUPER PANTALLAS  */
-/* ********************************************************** */
-/* ********************************************************** */
-/* ********************************************************** */
-/* ********************************************************** */
-@media screen and (min-width: 1400px) and (max-width: 5500px) {
  
- 
-li{
-
-    font-size: 15px;
- 
-}
-
-.apps{
-
-    opacity: 1 !important;
-    display: block;
-
-}
-
- .apps{
-    height: 94px;
-    width: 62px;
- }
-
-
-
-.hand > nav {
-    margin: -194px auto;
-}
-
-section.hand{
-
-
-    background: transparent;
-
-}
-
-
-.apps span {
-    font-size: 20px;
-}
-
-
-
-}
-
 /* ********************************************************** */
 /* ********************************************************** */
 /* ********************************************************** */

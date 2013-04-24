@@ -2,20 +2,20 @@
 		
 		<ul class="option">
 
-		<a href="{% url vista_aboutme %}">	
+		<a href="{% url 'vista_aboutme' %}">	
 
 			<li class="{% if aboutme_is_active %} menu_active {% endif %}"	>About me</li>
 		
 		</a>
 
-		<a href="{% url vista_skills %}">
+		<a href="{% url 'vista_skills' %}">
  
 			<li class="{% if skills_is_active %} menu_active {% endif %}">My skills</li>
 
 		</a>
 		
 
-			<li class="{% if apps_is_active %} menu_active {% endif %}">Apps</li>
+			<li class="{% if apps_is_active %} menu_active {% endif %}">My work</li>
 		</ul>
 
 

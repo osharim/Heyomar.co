@@ -4,7 +4,7 @@
 
 {% block css %}
 
-	<link rel="stylesheet" href="{{ MEDIA_URL }}css/aboutme.css">
+	<link rel="stylesheet" href="{{ MEDIA_URL }}css/aboutme.css?v={{ VERSION }} ">
 
 
 {% endblock css %}
@@ -14,7 +14,8 @@
 
 
 {% block js %} 
-	<script src="{{ MEDIA_URL }}js/init.js"></script>
+ 	<script src="{{ MEDIA_URL }}js/queryloader.js?v={{ VERSION }}"></script>
+	<script src="{{ MEDIA_URL }}js/init.js?v={{ VERSION }}"></script>
 {% endblock js %}
 
 
@@ -30,12 +31,29 @@
 		<li class="hello">Hello.</li>
 		<li  class="name">I'm Omar Hernandez.</li>
 	 
-		<li class="desc"> <span class="desc">Im 22 years old. <br> </span>Im insteresed creating <br> solutions  using Web and Mobile technologies.</li>
-		<li class="msg">A man who loves write code.</li>
+		<li class="desc"> <span class="desc">I'm 22 years old. <br>I'm Mexican. </span> & I'm insteresed in creating <br> solutions using Web and Mobile technologies.</li>
+		<li class="msg">A man who loves to write code.</li>
  
-		<li class="think">Love create solutions with code. </li>
+		<li class="think">Love creating solutions with code. </li>
 	</ul>
  </section>
 
+	<script>
+
+ 
+	</script>
+
+
+
+
+	<section class="hand">
+		<nav>
+			
+	{% include 'apps.html' %}
+
+		</nav>
+	</section>
 
 	{% endblock main %}
+
+
