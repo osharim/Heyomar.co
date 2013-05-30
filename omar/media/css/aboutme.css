@@ -9,9 +9,9 @@
 
 .about_me {
  
-   float: left;
+ float: left;
     height: auto;
-    margin-top: 50px;
+    margin-top: 75px;
     overflow-y: auto;
     width: 100%;
 }
