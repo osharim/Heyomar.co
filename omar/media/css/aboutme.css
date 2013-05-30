@@ -9,11 +9,14 @@
 
 .about_me {
  
-    float: left;
+   float: left;
     height: auto;
+    margin-top: 50px;
     overflow-y: auto;
     width: 100%;
 }
+
+
 
 .about_me > ul {
  
