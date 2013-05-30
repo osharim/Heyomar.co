@@ -7,6 +7,22 @@
 
 }
 
+.about_me {
+ 
+    float: left;
+    height: auto;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.about_me > ul {
+ 
+    float: left;
+    height: auto;
+    overflow: hidden;
+    width: 41%;
+}
+
 .hello{
 
 
